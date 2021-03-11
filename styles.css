@@ -11,6 +11,7 @@ body{
     font-family: Poppins, sans-serif;
     font-size: 1.2rem;
     color:white;
+    min-height: 100vh; /*to make everything fit to 100% of the view */
 }
 
 /*resetting the browser default margin settings*/
@@ -18,6 +19,12 @@ body{
     max-width: 1200px;
     margin:0 auto;
     padding:0 40px;
+}
+
+/*setting the entire webpage display as flex*/
+.full-height-grow{
+    display: flex;
+    flex-direction: column;
 }
 
 /*navigation bar*/

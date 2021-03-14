@@ -1,0 +1,83 @@
+.home-main-section{
+    display: flex;
+    align-items: stretch; /*content should be horizontally spread out as much as possible*/
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.home-main-section .img-wrapper{
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.home-main-section .lady-img{
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain; /*image shouldnt overflow*/
+    background-repeat: no-repeat;
+}
+
+.home-main-section .call-to-action{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+@media (max-width:900px){
+    .home-main-section .img-wrapper{
+        display: none;
+    }
+    .home-main-section{
+        justify-content: center;
+    }
+}
+
+.home-page-circle-1{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%; /*to make it a circle*/
+    background-color:rgb(188, 58, 128,.1); /*.1 for opacity*/
+    bottom: 5%; /*5% of screen away from bottom*/
+    left: 5%; /*5% of screen away from left*/
+    z-index: -1;
+}
+
+.home-page-circle-2{
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%; /*to make it a circle*/
+    background-color:rgb(52, 87, 178,.1); /*.1 for opacity*/
+    top: 15vh; /*15% of height screen away from top*/
+    left: 30vw; /*30% of screen width away from left*/
+    z-index: -1;
+}
+
+.home-page-circle-3{
+    position: absolute;
+    overflow: hidden;
+    width: 25vw;
+    height: 25vw;
+    bottom: 0; /*15% of height screen away from top*/
+    right: 0; /*30% of screen width away from left*/
+    z-index: -1;
+}
+
+.home-page-circle-3::before{
+    /*add styling here so that it wont overflow the parent*/
+    content:'';
+    transform: translate(40%,40%); /*to move the image 40% to bottom and right*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color:rgb(52, 87, 178,.1); /*.1 for opacity*/
+}

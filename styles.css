@@ -19,6 +19,7 @@ body{
     max-width: 1200px;
     margin:0 auto;
     padding:0 40px;
+    flex-grow: 1;
 }
 
 /*setting the entire webpage display as flex*/
@@ -27,12 +28,27 @@ body{
     flex-direction: column;
 }
 
-/*navigation bar*/
-.main-header{
+/*header and footer*/
+.main-header, .main-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 140px;
+}
+.main-header{
+    height: 110px;
+}
+.main-footer{
+    height: 70px;
+    background-color:#202027;
+    font-weight: bold;
+}
+.social-link img{
+    width: 1em;
+    margin-right: 0.25rem;
+}
+.main-footer .container{
+    display: flex;
+    justify-content: space-between;
 }
 .brand-logo{
     display: flex;
@@ -44,18 +60,50 @@ body{
 .brand-logo-name{
     margin-left: 1rem;
 }
-.main-nav ul{
+.main-nav ul, .footer-nav ul{
     display: flex;
     margin:0;
     padding: 0;
     list-style: none;
 }
-.main-nav a{
+.main-nav a, .footer-nav a{
     color:inherit;
     text-decoration: none;
     padding:1rem;
 }
-.main-nav a:hover{
+.main-nav a:hover, .footer-nav a:hover{
     color:#adadad;
 }
 
+/*text*/
+.title{
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.subtitle{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+}
+
+/*button*/
+.btn{
+    color:white;
+    background-color: #1762A7;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    outline: none;
+    border:none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #2180d8;
+}
+.btn:focus{
+    /*when we press tab*/
+    background-color: #2796ff;
+}

@@ -5,7 +5,6 @@
     flex-grow: 1;
     margin-bottom: 2rem;
 }
-
 .join-text{
     font-size: 3.5em;
     font-weight: bold;
@@ -13,7 +12,6 @@
 }
 .accent-text{
     color: #bc3a80;
-
 }
 .join-form{
     background-color: #202027;
@@ -26,9 +24,7 @@
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
-
 }
-
 .input-group :last-child{
     margin-bottom:0;
 }
@@ -36,7 +32,6 @@
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
-
 .input-group input{
     outline:none;
     background:none;
@@ -49,7 +44,6 @@
 .input-group input:focus{
     border-color: #596da0;
 }
-
 @media (max-width:900px){
     .join-main-section{
         flex-direction: column;

@@ -24,12 +24,10 @@
     height: 100px;
     background-color: #202027;
     margin-bottom: 2rem;
-
 }
 .icon img{
     width: 40px;
 }
-
 @media (max-width:800px){
     .discover-main-section {
         flex-direction: column;

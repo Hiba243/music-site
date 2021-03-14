@@ -4,7 +4,6 @@
     justify-content: space-between;
     flex-grow: 1;
 }
-
 .home-main-section .img-wrapper{
     flex-grow: 1;
     flex-direction: column;
@@ -12,7 +11,6 @@
     align-items: stretch;
     justify-content: flex-end;
 }
-
 .home-main-section .lady-img{
     background-image: url(images/landing-page-girl.png);
     flex-grow: 1;
@@ -21,7 +19,6 @@
     background-size: contain; /*image shouldnt overflow*/
     background-repeat: no-repeat;
 }
-
 .home-main-section .call-to-action{
     display: flex;
     flex-direction: column;
@@ -29,7 +26,6 @@
     margin: 1rem;
     align-self: center;
 }
-
 @media (max-width:900px){
     .home-main-section .img-wrapper{
         display: none;
@@ -38,7 +34,6 @@
         justify-content: center;
     }
 }
-
 .home-page-circle-1{
     position: absolute;
     width: 15vw;
@@ -49,7 +44,6 @@
     left: 5%; /*5% of screen away from left*/
     z-index: -1;
 }
-
 .home-page-circle-2{
     position: absolute;
     width: 15vw;
@@ -60,7 +54,6 @@
     left: 30vw; /*30% of screen width away from left*/
     z-index: -1;
 }
-
 .home-page-circle-3{
     position: absolute;
     overflow: hidden;
@@ -70,7 +63,6 @@
     right: 0; /*30% of screen width away from left*/
     z-index: -1;
 }
-
 .home-page-circle-3::before{
     /*add styling here so that it wont overflow the parent*/
     content:'';

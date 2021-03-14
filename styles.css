@@ -2,79 +2,27 @@
 *, *::before,*::after{
     box-sizing: border-box;
 }
-
-/*setting text-color to white and letting elements inherit this color*/
 body{
     padding:0;
     margin:0;
     background-color: #2F303A;
     font-family: Poppins, sans-serif;
     font-size: 1.2rem;
-    color:white;
+    color:white;  /*setting text-color to white and letting elements inherit this color*/
     min-height: 100vh; /*to make everything fit to 100% of the view */
 }
-
-/*resetting the browser default margin settings*/
+/*resetting the browser's default margin settings*/
 .container{
     max-width: 1200px;
     margin:0 auto;
     padding:0 40px;
     flex-grow: 1;
 }
-
 /*setting the entire webpage display as flex*/
 .full-height-grow{
     display: flex;
     flex-direction: column;
 }
-
-/*header and footer*/
-.main-header, .main-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.main-header{
-    height: 110px;
-}
-.main-footer{
-    height: 70px;
-    background-color:#202027;
-    font-weight: bold;
-}
-.social-link img{
-    width: 1em;
-    margin-right: 0.25rem;
-}
-.main-footer .container{
-    display: flex;
-    justify-content: space-between;
-}
-.brand-logo{
-    display: flex;
-    align-items:center;
-    font-size:1.25em;
-    color:inherit;
-    text-decoration: none;
-}
-.brand-logo-name{
-    margin-left: 1rem;
-}
-.main-nav ul, .footer-nav ul{
-    display: flex;
-    margin:0;
-    padding: 0;
-    list-style: none;
-}
-.main-nav a, .footer-nav a{
-    color:inherit;
-    text-decoration: none;
-    padding:1rem;
-}
-.main-nav a:hover, .footer-nav a:hover{
-    color:#adadad;
-}
-
 /*text*/
 .title{
     font-weight: 500;
@@ -87,7 +35,6 @@ body{
     font-size: 1.2em;
     margin-bottom: 2rem;
 }
-
 /*button*/
 .btn{
     color:white;
@@ -106,4 +53,52 @@ body{
 .btn:focus{
     /*when we press tab*/
     background-color: #2796ff;
+}
+/*header and footer common styling*/
+.main-header, .main-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav ul, .footer-nav ul{
+    display: flex;
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav a, .footer-nav a{
+    color:inherit;
+    text-decoration: none;
+    padding:1rem;
+}
+.main-nav a:hover, .footer-nav a:hover{
+    color:#adadad;
+}
+/*header*/
+.main-header{
+    height: 110px;
+}
+.brand-logo{
+    display: flex;
+    align-items:center;
+    font-size:1.25em;
+    color:inherit;
+    text-decoration: none;
+}
+.brand-logo-name{
+    margin-left: 1rem;
+}
+/*footer*/
+.main-footer{
+    height: 70px;
+    background-color:#202027;
+    font-weight: bold;
+}
+.main-footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.social-link img{
+    width: 1em;
+    margin-right: 0.25rem;
 }

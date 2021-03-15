@@ -1,8 +1,8 @@
+/*main container*/
 .discover-main-section{
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    flex-grow: 1;
 }
 .discover-main-section .covers-image{
     width: 20vw;
